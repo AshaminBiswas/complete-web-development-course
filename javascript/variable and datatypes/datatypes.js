@@ -24,4 +24,32 @@ let n = 4187446764174687654n
 // Null
 let temp = null
 
+//Symbol 
+const id1 = Symbol("id") // for creating unique value
+
+
+
+
+
+
+
+// NON Primitive Data type 
+
+// Array
+arr = [1,2,3,4,5,6,7,8,9,0 ]
+
+
+// Object 
+let obj = {
+    name:"ashamin",
+    id: "123456"
+}
+
+
+// function
+
+function add (){
+   console.log("Ashamin Biswas")
+}
+ add()
 
