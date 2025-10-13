@@ -18,7 +18,10 @@ arr.pop() // its delete the last element form an array
 
 let array = [20,30,40]
 array.unshift(10)  // its add new element at first index
-console.log(array);
+// console.log(array);
 
 array.shift()  // its delete new element at first index
-console.log(array);
+// console.log(array);
+
+
+
