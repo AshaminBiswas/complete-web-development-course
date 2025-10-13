@@ -9,8 +9,16 @@ let marks = [100,80,75,67,95]
 let arr = [100, "ashamin", false ]
 arr[1] = "biswas"
 // console.log(arr);
-arr.push("lol")
-console.log(arr);
-arr.pop()
-console.log(arr);
+arr.push("lol")  // its add the last element form an array
+// console.log(arr);
+arr.pop() // its delete the last element form an array
+// console.log(arr);
 
+
+
+let array = [20,30,40]
+array.unshift(10)  // its add new element at first index
+console.log(array);
+
+array.shift()  // its delete new element at first index
+console.log(array);
