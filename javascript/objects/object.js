@@ -51,3 +51,37 @@ let {name, roll} = user
 let array = [1,2,3,4,5,6,4]
 let [first, second] = array
 // console.log(first, second);
+
+
+for (const [key, value ] of Object.entries(user)) {
+    // console.log(key, value);
+}
+
+
+let user1 = {
+    name:"lolo",
+    greet:function(){
+        console.log(this.name)
+    }
+}
+
+let user2 = {
+    name:"kalu",
+    greet: user1.greet
+}
+
+// console.log(user2.greet());
+
+
+
+let userName = {
+    name:"paglu",
+    address:{
+        vill:"kanpur"
+    }
+}
+// this is shalo copy
+const newUser = [...userName]
+
+// this is deep copy 
+const obj = structuredClone(userName)
