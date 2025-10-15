@@ -39,7 +39,15 @@ delete user.aadhaar
 
 //  for perform loop operation on a object
 for (const key in user) {
-    console.log(key, user[key]);
+    // console.log(key, user[key]);
 }
 
 
+
+// Object destructuring
+let {name, roll} = user
+// console.log(name, roll);
+
+let array = [1,2,3,4,5,6,4]
+let [first, second] = array
+// console.log(first, second);
