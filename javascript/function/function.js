@@ -37,3 +37,20 @@ const addNumber  = function(a, b){
 console.log(addNumber(2,3));
 
 
+// immediately invoked function
+
+(function hii(){console.log("Hii Ashamin");
+})()
+
+
+//call back function
+function callback (){
+    console.log("i am a call back function");
+}
+
+function main(cb){
+    console.log("I am main function");
+    cb()
+}
+
+main(callback)
