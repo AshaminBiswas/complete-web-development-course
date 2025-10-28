@@ -53,4 +53,17 @@ let newSum = arr.reduce((acc, crr)=>{
     return acc + crr
 },0)
 
-console.log(newSum);
+// console.log(newSum);
+
+
+
+// Set
+
+let array = [2,2,4,52,8,8,6,4,25,35,24,468,10,10,]
+
+let setOne = new Set(array)
+setOne.add(200)
+setOne.has(20)
+setOne.delete(468)
+// console.log(setOne);
+
