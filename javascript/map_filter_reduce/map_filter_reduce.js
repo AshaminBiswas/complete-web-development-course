@@ -26,3 +26,31 @@ arr.filtering = function (cb) {
 };
 
 // console.log(arr.filtering((num)=> num > 2));
+
+
+
+//map
+
+let multiply = arr.map((num)=>num * 2)
+// console.log(multiply);
+
+
+// arr.mapping = function(cb){
+//     let answer = []
+//     for(let item of this){
+//         if(cb(item)){
+//             answer.push(item)
+//         }
+//     }
+//     return answer
+// }
+// console.log(arr.mapping((item)=> item + 2));
+
+
+//reduce
+
+let newSum = arr.reduce((acc, crr)=>{
+    return acc + crr
+},0)
+
+console.log(newSum);
