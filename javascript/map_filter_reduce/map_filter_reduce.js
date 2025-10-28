@@ -70,5 +70,17 @@ setOne.delete(468)
 
 let arr1 = ["ashamin", "ashamin", "hasan", "soumen", "soumen" ]
 let unique = [...new Set(arr1)]
-console.log(unique);
+// console.log(unique);
 
+
+
+// map data structure
+const m1 = new Map([
+    ["ashamin", 23],
+    [[1,2,3,], "ahammadpur"],
+    [true, 2000]
+])
+
+m1.set(["lol", "col"])
+m1.get("ashamin")
+console.log(m1);
