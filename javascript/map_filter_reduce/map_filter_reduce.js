@@ -67,3 +67,8 @@ setOne.has(20)
 setOne.delete(468)
 // console.log(setOne);
 
+
+let arr1 = ["ashamin", "ashamin", "hasan", "soumen", "soumen" ]
+let unique = [...new Set(arr1)]
+console.log(unique);
+
