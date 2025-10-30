@@ -1,1 +1,5 @@
 document.getElementById("main")
+document.getElementsByTagName("h1")
+document.getElementsByClassName("heading")
+document.querySelector(".heading")
+document.querySelectorAll("h1")
