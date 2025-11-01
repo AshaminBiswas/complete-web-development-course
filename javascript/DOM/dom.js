@@ -18,3 +18,15 @@ newElement2.textContent = "I am H3 "
 
 heading.after(newElement)
 newElement.after(newElement2)
+
+
+const ul = document.querySelector("ul")
+// console.log(ul);
+ul.setAttribute("id", "ul")
+const list = document.createElement("li")
+list.textContent = "Milk"
+const list2 = document.createElement("li")
+list2.textContent = "Alu"
+
+ul.append(list)
+ul.prepend(list2)
