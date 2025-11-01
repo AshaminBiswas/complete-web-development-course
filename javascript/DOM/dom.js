@@ -35,10 +35,10 @@ ul.setAttribute("id", "ul")
 
 
 const item = ["alu", "paneer", "tomato", "onion","garlic"]
-
+const fragment = document.createDocumentFragment()
 item.map((item)=>{
     let list = document.createElement("li")
     list.textContent = item
-    ul.append(list)
-    
+    fragment.append(list)  
 })
+ ul.append(fragment)
