@@ -19,3 +19,13 @@ quote.addEventListener("click",()=>{
     tag.textContent = quotes[index]
     
 })
+
+
+
+const background = document.querySelector(".bg")
+
+
+const buttons = document.querySelector(".parent").addEventListener("click",(e)=>{
+    const color = e.target
+    background.style.backgroundColor = color.textContent
+})
