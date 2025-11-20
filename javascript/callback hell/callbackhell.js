@@ -1,6 +1,14 @@
 
 // build a simple zomato app
 
+
+const orderDetails = {
+    orderId:123455,
+    food:["pizza", "biriyani"],
+    amount:1000
+}
+
+
 function placeOrder(cb){
     console.log("payment in progress..");
 
