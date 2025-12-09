@@ -1,11 +1,13 @@
 import Card from './components/Card'
-import './App.css'
-
+import Header from './components/Header'
+import {Button} from "./lib/utils"
 function App() {
   
 
   return (
     <>
+      <Header/>
+
        <div className='flex gap-4' >
          <Card 
          title="Buy Python"
