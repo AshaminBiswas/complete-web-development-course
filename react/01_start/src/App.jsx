@@ -1,33 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Card from './components/Card'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+     {/* <h1 class="text-blue-600 dark:text-sky-400">hello world</h1> */}
+
+     <div className='flex gap-4'>
+      <div className='w-68  border border-amber-400 rounded-2xl'>
+      <img className='rounded-tl-2xl rounded-tr-2xl' src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="image" />
+      <div className='px-2'>
+        <h1>Card 1</h1>
+        <p className='text-emerald-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, debitis?</p>
+        <button>Buy Now</button>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+     </div>
+     <div className='w-68  border border-amber-400 rounded-2xl'>
+      <img className='rounded-tl-2xl rounded-tr-2xl' src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="image" />
+      <div className='px-2'>
+        <h1>Card 1</h1>
+        <p className='text-emerald-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, debitis?</p>
+        <button>Buy Now</button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+     </div>
+     <div className='w-68  border border-amber-400 rounded-2xl'>
+      <img className='rounded-tl-2xl rounded-tr-2xl' src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="image" />
+      <div className='px-2'>
+        <h1>Card 1</h1>
+        <p className='text-emerald-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, debitis?</p>
+        <button>Buy Now</button>
+      </div>
+     </div>
+     <div className='w-68  border border-amber-400 rounded-2xl'>
+      <img className='rounded-tl-2xl rounded-tr-2xl' src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="image" />
+      <div className='px-2'>
+        <h1>Card 1</h1>
+        <p className='text-emerald-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, debitis?</p>
+        <button>Buy Now</button>
+      </div>
+     </div>
+     </div>
     </>
   )
 }
