@@ -6,7 +6,9 @@ import "./App.css";
 function App() {
   const [queue, setQueue] = useState([]);
 
-  const addToQueue = (customer) => {};
+  const addToQueue = (customer) => {
+    setQueue([...queue, {...customer, id:Date.now(), status:"waiting"}])
+  };
 
   const updateStatus = (id, newStatus) => {};
 
