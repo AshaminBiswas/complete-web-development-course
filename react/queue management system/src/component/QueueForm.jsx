@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import {FaUser, FaUserPlus} from "react-icons/fa"
+
+
+
 function QueueForm({ onAdd }) {
   const [name, setName] = useState("");
   const [service, setService] = useState("");
@@ -14,7 +17,7 @@ function QueueForm({ onAdd }) {
   };
 
   return (
-    <div className="bg-zinc-900 p-6 ">
+    <div className="bg-zinc-900 p-6 border rounded-2xl ">
       <h1 className="text-white text-2xl font-semibold">Queue Form</h1>
       <form
         onSubmit={handleSubmit}

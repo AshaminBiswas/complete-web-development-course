@@ -10,9 +10,17 @@ function App() {
     setQueue([...queue, {...customer, id:Date.now(), status:"waiting"}])
   };
 
-  const updateStatus = (id, newStatus) => {};
+  const updateStatus = (id, newStatus) => {
+    setQueue(queue.map((customer)=>{
+        customer.id === id ? {...customer, status:newStatus} : customer
+    }))
+  };
 
-  const removeFormQueue = (id) => {};
+  const removeFormQueue = (id) => {
+    setQueue(queue.filter((customer)=>{
+      customer.id !== id
+    }))
+  };
 
   return (
     <div className="app bg-black h-screen flex flex-col items-center">
