@@ -22,7 +22,7 @@ function Navigation (){
           <div className="flex justify-center items-center p-4">
             {section.map((section)=>(
               <button
-              className={`px-4 py-2 rounded-lg font-medium bg-blue-600 text-white mt-2 mr-2 `}
+              className={`px-4 py-2 rounded-lg font-medium bg-blue-600 text-white mt-2 mr-2  hover:bg-blue-900 transition-all cursor-pointer`}
                key={section.id}>
                 <span>{section.icon}</span>
                 {section.label}
@@ -41,8 +41,7 @@ function AppContent(){
       <Navigation/>
         <div className="container mx-auto px-4 py-8">
           <header>
-            <h1 className="text-3xl text-center font-semibold text-white">React Props Explained</h1>
-
+            <h1 className="text-3xl text-center font-semibold text-white mb-4">React Props Explained</h1>
           </header>
           <div className="space-y-8">
               <div id="basic" className="basic">
