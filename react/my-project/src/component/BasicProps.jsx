@@ -15,7 +15,7 @@ function Button({text, color, size, onClick, disabled}){
 function BasicProps() {
   const [clickCount, setClickCount] = useState(0)
   return (
-    <section className="p-8 bg-white rounded-xl shadow-2xl">
+    <section className="p-8 bg-white rounded-xl shadow-2xl mb-10">
       <h2>Basic Props</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quisquam provident reprehenderit suscipit nihil magnam iure perferendis accusantium adipisci exercitationem!</p>
 

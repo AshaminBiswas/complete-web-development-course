@@ -17,7 +17,7 @@ function Navigation (){
   ]
 
   return(
-    <nav className={`sticky top-0 z-50 shadow-md`}>
+    <nav className={`sticky top-0 z-50 shadow-md bg-gray-800`}>
         <div>
           <div className="flex justify-center items-center p-4">
             {section.map((section)=>(
