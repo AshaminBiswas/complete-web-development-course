@@ -5,7 +5,7 @@ function Button({text, color, size, onClick, disabled}){
     <button
     onClick={onClick}
     disabled={disabled}
-    className={`px-4 py-1.5 rounded-lg font-medium transition-all duration-300 ${size==='small'? 'text-small px-4 py-1': " "} ${size==='large'? 'text-lg px-8 py-3': " "} ${color==='primary'? 'bg-blue-500 hover:bg-blue-600 text-white': " "} ${color==='secondary'? 'bg-gray-500 hover:bg-gray-600 text-white': " "} ${color==='danger'? 'bg-red-500 hover:bg-red-600 text-white': " "} ${color==='success'? 'bg-green-500 hover:bg-green-600 text-white': " "} ${disabled ? "opacity-50 cursor-not-allowed": "cursor-pointer"}`}
+    className={`px-4 py-1.5 rounded-lg font-medium transition-all duration-300 ${size==='small'? 'text-small px-4 py-1': " "} ${size==='large'? 'text-lg px-8 py-1': " "} ${color==='primary'? 'bg-blue-500 hover:bg-blue-600 text-white': " "} ${color==='secondary'? 'bg-gray-500 hover:bg-gray-600 text-white': " "} ${color==='danger'? 'bg-red-500 hover:bg-red-600 text-white': " "} ${color==='success'? 'bg-green-500 hover:bg-green-600 text-white': " "} ${disabled ? "opacity-50 cursor-not-allowed": "cursor-pointer"}`}
     >
     {text}
     </button>
@@ -49,6 +49,19 @@ function BasicProps() {
           
           />
         </div>
+
+        <h3>Different Size {clickCount}</h3>
+        <div className="flex flex-wrap gap-4">
+          <Button
+          text = "Small"
+          size="small"
+          color="primary"/>
+          <Button
+          text = "Large"
+          size="large"
+          color="primary"/>
+        </div>
+
       </div>
     </section>
   )
