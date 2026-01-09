@@ -8,10 +8,15 @@ function Counter() {
         setCount(count + 1)
     }
 
+    function decrease(){
+        setCount(count - 1)
+    }
+
   return (
     <div>
       <h1> Count is: {count}</h1>
-      <button onClick={increase}>Click</button>
+      <button onClick={increase}>Click to Increase</button>
+      <button onClick={decrease}>Click to Decrease</button>
     </div>
   )
 }
